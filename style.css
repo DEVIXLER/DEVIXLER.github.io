@@ -16,9 +16,10 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #aaa; /* #aaa */
   --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-text-header: #2800FF;
+  --color-primary: #FFFF00; /* #ffff00 */ 
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -46,11 +47,6 @@ to this section's matching END comment to see page-specific styles.
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
 }
-
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; min-height: 14.0px}
-    span.s1 {color: #ff0000}
-    span.s2 {color: #21ff06}
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -88,7 +84,6 @@ p.p1 {margin: 0.0px 0.0px 0.0px 0.0px}
   flex-wrap: wrap;
   border-top: 4px solid #fff;
 }
-
 
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
@@ -137,7 +132,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color: var(--color-text-header);
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
@@ -173,7 +168,8 @@ input {
 
 /* Subheading */
 h2 {
-  color: #2800FF;
+  color: var(--color-text-header);
+  word-wrap: break-word;
 }
 
 /* Interactive image */
